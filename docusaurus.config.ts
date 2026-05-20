@@ -6,8 +6,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'PreTeXt.Plus',
-  tagline: 'Enhanced authoring for PreTeXt documents',
-  favicon: 'img/favicon.ico',
+  tagline: 'A modern authoring workflow for PreTeXt projects',
+  favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -49,15 +49,17 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/pretext-plus-social-card.svg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
       title: 'PreTeXt.Plus',
       logo: {
-        alt: 'PreTeXt.Plus Logo',
+        alt: 'PreTeXt.Plus Symbol',
         src: 'img/logo.svg',
+        width: 32,
+        height: 32,
       },
       items: [
         {
@@ -81,7 +83,7 @@ const config: Config = {
           items: [
             {
               label: 'Getting Started',
-              to: '/getting-started/installation',
+              to: '/getting-started/creating-a-project',
             },
             {
               label: 'Project Types',
@@ -107,7 +109,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} PreTeXt.Plus. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} PreTeXt.Plus.`,
     },
     prism: {
       theme: prismThemes.github,

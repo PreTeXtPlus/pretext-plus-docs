@@ -14,28 +14,28 @@ A LaTeX-style project lets you write your document using LaTeX-like syntax. PreT
 
 ## Syntax Overview
 
-{/* TODO: Cover key LaTeX-style syntax supported by PreTeXt.Plus */}
+This section will document supported LaTeX-style syntax.
 
 ### Document Structure
 
-{/* TODO: \chapter, \section, \subsection, etc. */}
+Coverage of structure commands such as chapter and section levels will be added here.
 
 ### Math
 
-{/* TODO: Inline and display math, equation environments */}
+Supported inline and display math syntax will be detailed here.
 
 ### Theorems and Proofs
 
-{/* TODO: theorem, lemma, proof environments */}
+Supported theorem-like and proof environments will be documented here.
 
 ### Figures and Tables
 
-{/* TODO: figure, tabular, etc. */}
+Figure and table syntax support will be documented here.
 
 ## Differences from Standard LaTeX
 
-{/* TODO: Note any intentional deviations or unsupported commands */}
+Intentional differences and unsupported commands will be listed here.
 
 ## Example
 
-{/* TODO: Small full example of a LaTeX-style source file */}
+A complete sample file will be included here.

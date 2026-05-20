@@ -8,32 +8,32 @@ This guide covers how to write content in a LaTeX-style PreTeXt.Plus project. Fo
 
 ## Document Preamble
 
-{/* TODO: Explain the preamble/configuration file for LaTeX-style projects */}
+Preamble and configuration details will be documented here.
 
 ## Structural Elements
 
-{/* TODO: Parts, chapters, sections, subsections */}
+Guidance for parts, chapters, sections, and subsections will be documented here.
 
 ## Mathematics
 
-{/* TODO: Inline math, display math, equation environments, align, etc. */}
+Math syntax, including inline and display forms, will be documented here.
 
 ## Environments
 
-{/* TODO: theorem, definition, example, remark, proof, exercise, etc. */}
+Supported environments such as theorem, definition, and proof will be documented here.
 
 ## Lists
 
-{/* TODO: itemize, enumerate, description */}
+List syntax and conversion behavior will be documented here.
 
 ## Figures and Tables
 
-{/* TODO: figure, includegraphics, tabular */}
+Figure and table workflows will be documented here.
 
 ## Cross-References and Labels
 
-{/* TODO: \label, \ref, \xref */}
+Label and cross-reference syntax will be documented here.
 
 ## Including Other Files
 
-{/* TODO: \input or equivalent for multi-file projects */}
+Multi-file authoring patterns will be documented here.

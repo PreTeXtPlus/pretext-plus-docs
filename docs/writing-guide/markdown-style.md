@@ -8,32 +8,32 @@ This guide covers how to write content in a Markdown-style PreTeXt.Plus project.
 
 ## Document Configuration
 
-{/* TODO: Explain the YAML front matter or config file for Markdown-style projects */}
+Document-level configuration and metadata conventions will be documented here.
 
 ## Structural Elements
 
-{/* TODO: How headings map to PreTeXt divisions (book/article, chapter, section, etc.) */}
+How headings map to PreTeXt structural elements will be documented here.
 
 ## Mathematics
 
-{/* TODO: Inline $...$ and display $$...$$ math, and equation blocks */}
+Math syntax, including inline and display forms, will be documented here.
 
 ## Special Blocks
 
-{/* TODO: Fenced block syntax for theorems, definitions, examples, notes, warnings, proofs */}
+Supported special block syntax will be documented here.
 
 ## Lists
 
-{/* TODO: Unordered, ordered, and description lists */}
+List syntax and behavior will be documented here.
 
 ## Figures and Images
 
-{/* TODO: Image syntax, captions, labels */}
+Image usage, captions, and labeling will be documented here.
 
 ## Cross-References
 
-{/* TODO: How to label and reference within a Markdown-style document */}
+Cross-reference conventions will be documented here.
 
 ## Multi-File Projects
 
-{/* TODO: How to split a large document across multiple Markdown files */}
+Recommended patterns for multi-file projects will be documented here.

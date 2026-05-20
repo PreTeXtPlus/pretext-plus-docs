@@ -1,0 +1,67 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">PreTeXt.Plus Documentation</title>
+  <desc id="desc">Social media preview card for PreTeXt.Plus docs</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#173042"/>
+      <stop offset="52%" stop-color="#2a4b61"/>
+      <stop offset="100%" stop-color="#4e6172"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c7b570" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#efe4b4" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <circle cx="1030" cy="90" r="220" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="160" cy="590" r="190" fill="#ffffff" fill-opacity="0.06"/>
+
+  <rect x="70" y="64" width="1060" height="502" rx="28" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.22"/>
+  <rect x="70" y="494" width="1060" height="72" rx="0" fill="url(#band)"/>
+
+  <rect x="110" y="140" width="250" height="250" rx="36" fill="#ffffff" fill-opacity="0.88"/>
+  <svg x="130" y="160" width="210" height="210" viewBox="0 0 135.46667 135.46667" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+    <defs id="logo-defs">
+      <inkscape:path-effect effect="mirror_symmetry" start_point="132.6344,-77.524968" end_point="132.6344,1.5136171" center_point="132.6344,-38.005675" id="logo-path-effect6889" is_visible="true" lpeversion="1.2" lpesatellites="" mode="free" discard_orig_path="false" fuse_paths="false" oposite_fuse="false" split_items="false" split_open="false" link_styles="false" />
+      <inkscape:path-effect effect="mirror_symmetry" start_point="178.76587,-7.1125216" end_point="178.76587,68.453761" center_point="178.76587,30.67062" id="logo-path-effect2775" is_visible="true" lpeversion="1.2" lpesatellites="" mode="free" discard_orig_path="false" fuse_paths="false" oposite_fuse="false" split_items="false" split_open="false" link_styles="false" />
+    </defs>
+    <g transform="translate(-8.6237273,13.465576)">
+      <g transform="translate(-2.2737627,65.698325)">
+        <g transform="translate(0,-9.6832989)">
+          <circle style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" cx="78.630821" cy="-1.7472688" r="67.535141" />
+          <g transform="translate(12.468483,24.164349)">
+            <g transform="translate(0,10.128581)" style="stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1">
+              <path style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M 126.00102,-7.1125216 V 68.453761 c 12.87303,-8.948543 38.87728,-8.249552 50.42624,0 h 2.33861 M 231.53072,-7.1125216 V 68.453761 c -12.87303,-8.948543 -38.87728,-8.249552 -50.42624,0 h -2.33861" transform="translate(-112.60353,-63.424976)" />
+              <path style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="m 132.6344,-70.626682 c -5.5793,-4.326525 -25.49392,-12.412308 -47.955359,-1.240234 v 70.4866521 c 30.028029,-8.316292 37.826779,-0.551215 47.955359,2.893881 m 0,-72.1402991 c 5.5793,-4.326525 25.49392,-12.412308 47.95536,-1.240234 v 70.4866521 c -30.02803,-8.316292 -37.82678,-0.551215 -47.95536,2.893881" transform="translate(-66.47206,0.41341111)" />
+              <g transform="translate(-122.21099,-35.139974)" style="stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1">
+                <path style="fill:none;stroke:#ffffff;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1" d="M 196.29375,-25.656749 179.93282,21.657595" />
+                <path style="fill:none;stroke:#ffffff;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1" d="M 167.66521,-22.157021 153.06032,-2.8776003 167.66521,16.40182" />
+                <path style="fill:none;stroke:#ffffff;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1" d="M 209.06838,-22.157021 223.68563,-2.8776003 209.06838,16.40182" />
+              </g>
+            </g>
+            <path style="fill:#000000;fill-opacity:0;stroke:#c7b570;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" d="M 126.00102,-7.1125216 V 68.453761 c 12.87303,-8.948543 38.87728,-8.249552 50.42624,0 h 2.33861 M 231.53072,-7.1125216 V 68.453761 c -12.87303,-8.948543 -38.87728,-8.249552 -50.42624,0 h -2.33861" inkscape:path-effect="#logo-path-effect2775" inkscape:original-d="M 126.00102,-7.1125216 V 68.453761 c 12.87303,-8.948543 38.87728,-8.249552 50.42624,0 h 2.33861" transform="translate(-112.60353,-53.296395)" />
+            <path style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" d="m 132.6344,-70.626682 c -5.5793,-4.326525 -25.49392,-12.412308 -47.955359,-1.240234 v 70.4866521 c 30.028029,-8.316292 37.826779,-0.551215 47.955359,2.893881 m 0,-72.1402991 c 5.5793,-4.326525 25.49392,-12.412308 47.95536,-1.240234 v 70.4866521 c -30.02803,-8.316292 -37.82678,-0.551215 -47.95536,2.893881" inkscape:path-effect="#logo-path-effect6889" inkscape:original-d="m 132.6344,-70.626682 c -5.5793,-4.326525 -25.49392,-12.412308 -47.955359,-1.240234 v 70.4866521 c 30.028029,-8.316292 37.826779,-0.551215 47.955359,2.893881" transform="translate(-66.47206,10.541992)" />
+            <g>
+              <path style="fill:none;stroke:#4e6172;stroke-width:3.70996;stroke-linecap:round" d="M 88.868055,-51.120379 72.507125,-3.8060355" />
+              <path style="fill:none;stroke:#4e6172;stroke-width:3.70996;stroke-linecap:round" d="m 38.078957,-46.742628 -14.60489,19.279421 14.60489,19.27942" />
+              <path style="fill:none;stroke:#4e6172;stroke-width:3.70996;stroke-linecap:round" d="m 94.232649,-46.742628 14.617261,19.279421 -14.617261,19.27942" />
+              <g transform="translate(1.753071,-1.4238995)">
+                <path style="fill:none;stroke:#4e6172;stroke-width:3.70996;stroke-linecap:round" d="M 65.38946,-26.039308 H 41.69048" />
+                <path style="fill:none;stroke:#4e6172;stroke-width:3.70996;stroke-linecap:round" d="m 53.53997,-14.189818 v -23.69898" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+
+  <text x="410" y="225" fill="#ffffff" font-family="Georgia, serif" font-size="86" font-weight="700">PreTeXt.Plus</text>
+  <text x="410" y="286" fill="#e7eef3" font-family="Arial, sans-serif" font-size="42">Documentation</text>
+  <text x="410" y="356" fill="#f3f7fa" font-family="Arial, sans-serif" font-size="32">A modern authoring workflow for PreTeXt projects</text>
+
+  <text x="110" y="540" fill="#2a3f50" font-family="Arial, sans-serif" font-size="30" font-weight="700">Project types, writing guides, and feature references</text>
+</svg>

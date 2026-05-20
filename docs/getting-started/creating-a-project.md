@@ -4,18 +4,16 @@ sidebar_position: 2
 
 # Creating a Project
 
-PreTeXt.Plus provides a project creation command that scaffolds a new project with the structure and configuration you need.
+After logging in to PreTeXt.Plus, you will a list of your projects.  To create a new one, click on the "+ New Project" button. This will start an interactive process to set up your new project.
 
-## The `new` Command
+Here you can give your project a name (if you leave it blank, it will be called "New Project").
 
-{/* TODO: Document the project creation command and its options */}
+Next select your markup style: PreTeXt, LaTeX-style PreTeXt, or Markdown-style PreTeXt. You can always convert to PreTeXt from the other styles later (currently you cannot convert from PreTeXt to the other styles).
 
-## Choosing a Project Type
+Coming soon: You will be able to select a document type (e.g., book, article, course packet, slideshow).
 
-When creating a project you'll be asked to choose a project type. See [Project Types](../project-types) for a full description of each option.
+Also coming soon: You will be able to import an existing LaTeX, Markdown, or PreTeXt project to start from.
 
-{/* TODO: Add any interactive prompts or flags explained here */}
+Finally, click "Create Project" and your new project will be created and ready for you to start writing!
 
-## Project Structure
 
-{/* TODO: Describe the generated project layout (folders, key files) */}

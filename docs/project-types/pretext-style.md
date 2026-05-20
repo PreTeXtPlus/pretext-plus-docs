@@ -16,7 +16,9 @@ A PreTeXt-style project uses native PreTeXt XML directly. This is the most flexi
 
 Even for native PreTeXt projects, PreTeXt.Plus provides:
 
-{/* TODO: List tooling/workflow improvements (project management, build commands, VS Code integration, etc.) */}
+- Project lifecycle tooling
+- Build command integration
+- VS Code-focused authoring support
 
 ## Further Reading
 

@@ -14,28 +14,28 @@ A Markdown-style project lets you write in an extended Markdown syntax. PreTeXt.
 
 ## Syntax Overview
 
-{/* TODO: Cover the extended Markdown syntax supported by PreTeXt.Plus */}
+This section will document the extended Markdown syntax supported by PreTeXt.Plus.
 
 ### Headings and Structure
 
-{/* TODO: How headings map to PreTeXt divisions */}
+Heading and structure mapping to PreTeXt divisions will be documented here.
 
 ### Math
 
-{/* TODO: Inline $ and display $$ math blocks */}
+Inline and display math support will be described here.
 
 ### Callout Blocks
 
-{/* TODO: Custom block syntax for notes, warnings, theorems, etc. */}
+Custom block syntax for notes, warnings, theorems, and similar content will be described here.
 
 ### Links and Cross-References
 
-{/* TODO: How cross-references work in Markdown-style projects */}
+Cross-reference and linking behavior for Markdown-style projects will be documented here.
 
 ## Differences from Standard Markdown
 
-{/* TODO: Note extensions and any standard Markdown features that behave differently */}
+Extensions and differences from standard Markdown will be listed here.
 
 ## Example
 
-{/* TODO: Small full example of a Markdown-style source file */}
+A complete sample file will be included here.

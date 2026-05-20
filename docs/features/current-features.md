@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Current Features
 
-{/* TODO: Fill in the current feature list for PreTeXt.Plus */}
+This page summarizes what is currently available in PreTeXt.Plus.
 
 ## Project Management
 
-{/* TODO: CLI commands for creating, building, and managing projects */}
+CLI commands for creating, building, and managing projects will be listed here.
 
 ## Project Types
 
@@ -18,12 +18,12 @@ sidebar_position: 1
 
 ## VS Code Integration
 
-{/* TODO: Describe VS Code extension features (syntax highlighting, preview, build, etc.) */}
+VS Code extension features such as syntax support, preview, and build tooling will be documented here.
 
 ## Build Output Formats
 
-{/* TODO: List supported output formats (HTML, PDF, EPUB, etc.) */}
+Supported output formats and target workflows will be listed here.
 
 ## Other Features
 
-{/* TODO: Any other noteworthy current features */}
+Additional capabilities will be documented as they become stable.
