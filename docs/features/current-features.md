@@ -6,23 +6,25 @@ sidebar_position: 1
 
 This page summarizes what is currently available in PreTeXt.Plus.
 
-## Project Management
+## Authoring Markup Options
 
-CLI commands for creating, building, and managing projects will be listed here.
+- **PreTeXt-style** — Native PreTeXt XML projects.
+- **LaTeX-style** — Write in LaTeX-like syntax, compiled to PreTeXt.
+- **Markdown-style** — Write in extended Markdown, compiled to PreTeXt.
 
-## Project Types
+Projects written using LaTeX-style PreTeXt and Markdown-style PreTeXt can be converted to XML-style PreTeXt projects (doing so creates a copy of the project).
 
-- **PreTeXt-style** — Native PreTeXt XML projects
-- **LaTeX-style** — Write in LaTeX-like syntax, compiled to PreTeXt
-- **Markdown-style** — Write in extended Markdown, compiled to PreTeXt
+## Graphics
 
-## VS Code Integration
-
-VS Code extension features such as syntax support, preview, and build tooling will be documented here.
+Currently the only supported graphics formats is authoring your diagram using PreFigure.  Support for including uploaded images and generating diagrams using TikZ and Asymptote is coming soon.
 
 ## Build Output Formats
 
 Currently we support single-page HTML pages as output. These are hosted by PreTeXt.Plus and can be shared with a simple URL (or embedded in an LMS using the standard PreTeXt embed code).
+
+## Modular editing
+
+PreTeXt.Plus lets you edit one section at a time (supported for Classic PreTeXt and LaTeX-style projects).  Open the Table of Contents sidebar to navigate between sections, or edit the whole document at once.
 
 ## Other Features
 

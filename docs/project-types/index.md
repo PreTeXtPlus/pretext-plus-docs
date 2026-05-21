@@ -12,4 +12,4 @@ PreTeXt.Plus supports three project types. Each produces valid PreTeXt output bu
 | [LaTeX-style](./latex-style) | LaTeX-like syntax | Authors coming from LaTeX |
 | [Markdown-style](./markdown-style) | Markdown | Quick drafting, simpler documents |
 
-All three types produce the same PreTeXt output and support the full range of PreTeXt output formats (HTML, PDF, EPUB, etc.).
+All three types produce the same PreTeXt output, and you can convert from LaTeX-style or Markdown-style to classic PreTeXt if you want to switch later (doing so creates a copy of the project).  

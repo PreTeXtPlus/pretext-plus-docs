@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Writing in LaTeX Style
 
-This guide covers how to write content in a LaTeX-style PreTeXt.Plus project. For how to create a LaTeX-style project, see [LaTeX-Style Projects](../project-types/latex-style).
+This guide covers how to write content in a LaTeX-style PreTeXt.Plus project. For how to create a LaTeX-style project, see [LaTeX-Style Projects](/project-types/latex-style/).
 
 ## Document Preamble
 
