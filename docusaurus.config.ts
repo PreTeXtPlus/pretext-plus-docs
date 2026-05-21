@@ -14,11 +14,13 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  url: 'https://pretextplus.github.io',
+  url: 'https://docs.pretext.plus',
   baseUrl: '/',
 
   organizationName: 'PreTeXtPlus',
   projectName: 'pretext-plus-docs',
+
+  trailingSlash: true,
 
   onBrokenLinks: 'throw',
 

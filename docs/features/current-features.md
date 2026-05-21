@@ -22,7 +22,7 @@ VS Code extension features such as syntax support, preview, and build tooling wi
 
 ## Build Output Formats
 
-Supported output formats and target workflows will be listed here.
+Currently we support single-page HTML pages as output. These are hosted by PreTeXt.Plus and can be shared with a simple URL (or embedded in an LMS using the standard PreTeXt embed code).
 
 ## Other Features
 

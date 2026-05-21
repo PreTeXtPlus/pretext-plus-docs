@@ -7,7 +7,6 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "GIT_USER=${GIT_USER:-$(git config --get github.user || git remote get-url origin | sed -E 's#(git@github.com:|https://github.com/)([^/]+)/.*#\\2#')} docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
