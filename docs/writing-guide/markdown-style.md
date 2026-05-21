@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Writing in Markdown Style
 
-This guide covers how to write content in a Markdown-style PreTeXt.Plus project. For how to create a Markdown-style project, see [Markdown-Style Projects](../project-types/markdown-style).
+This guide covers how to write content in a Markdown-style PreTeXt.Plus project. For how to create a Markdown-style project, see [Markdown-Style Projects](/project-types/markdown-style).
 
 ## Document Configuration
 

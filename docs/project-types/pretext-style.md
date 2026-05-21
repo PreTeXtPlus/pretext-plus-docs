@@ -2,23 +2,15 @@
 sidebar_position: 4
 ---
 
-# PreTeXt-Style Projects
+# Classic PreTeXt Projects
 
-A PreTeXt-style project uses native PreTeXt XML directly. This is the most flexible option and gives you access to the full PreTeXt feature set without any translation layer.
+A Classic PreTeXt project uses native PreTeXt XML directly. This is the most flexible option and gives you access to the full PreTeXt feature set without any translation layer.
 
 ## When to Use This Type
 
-- You are an experienced PreTeXt author
-- You need features not yet supported in the LaTeX or Markdown styles
-- You want full control over the PreTeXt source
-
-## What PreTeXt.Plus Adds
-
-Even for native PreTeXt projects, PreTeXt.Plus provides:
-
-- Project lifecycle tooling
-- Build command integration
-- VS Code-focused authoring support
+- You are an experienced PreTeXt author.
+- You need features not yet supported in the LaTeX or Markdown styles.
+- You want full control over the PreTeXt source.
 
 ## Further Reading
 
