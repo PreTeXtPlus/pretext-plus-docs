@@ -26,22 +26,4 @@ Generates static content into the `build` directory.
 
 ## Deployment
 
-Default (auto-detect GitHub user from git config or origin remote owner):
-
-```bash
-npm run deploy
-```
-
-Using SSH:
-
-```bash
-USE_SSH=true npm run deploy
-```
-
-Override the detected user if needed:
-
-```bash
-GIT_USER=<Your GitHub username> npm run deploy
-```
-
-If using GitHub Pages, this command builds the site and pushes to the `gh-pages` branch.
+Push changes on a branch and PR main.  After the test deployment, merge to main to deploy to production.  The site is hosted on GitHub Pages at https://docs.pretext.plus.

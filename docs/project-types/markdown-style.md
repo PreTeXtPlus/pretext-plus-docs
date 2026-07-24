@@ -12,4 +12,4 @@ A Markdown-style project lets you write in an extended Markdown syntax. PreTeXt.
 - Your document has little mathematical content
 - You are already comfortable with Markdown
 
-See the [Markdown-style PreTeXt documentation](/writing-guide/markdown-style) for details on the supported syntax and features.
+See the [Markdown-style PreTeXt documentation](/how-to/markdown-style) for details on the supported syntax and features.

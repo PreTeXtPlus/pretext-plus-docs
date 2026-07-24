@@ -12,4 +12,4 @@ A LaTeX-style project lets you write your document using LaTeX-like syntax. PreT
 - You already have LaTeX source you want to convert.
 - You prefer LaTeX's familiar syntax.
 
-See the [LaTeX-style PreTeXt documentation](/writing-guide/latex-style/) for details on the supported syntax and features.
+See the [LaTeX-style PreTeXt documentation](/how-to/latex-style/) for details on the supported syntax and features.
