@@ -88,8 +88,16 @@ const config: Config = {
               to: '/getting-started/creating-a-project',
             },
             {
-              label: 'Project Types',
-              to: '/project-types',
+              label: 'Writing',
+              to: '/writing',
+            },
+            {
+              label: 'The Editor',
+              to: '/editor/overview',
+            },
+            {
+              label: 'Building & Publishing',
+              to: '/building/outputs',
             },
             {
               label: 'Features',
