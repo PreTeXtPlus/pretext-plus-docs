@@ -1,0 +1,8 @@
+{
+  "label": "Building & Publishing",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Configuring build outputs, running builds, and getting your document in front of readers."
+  }
+}

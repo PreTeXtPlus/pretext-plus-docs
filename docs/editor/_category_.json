@@ -1,0 +1,8 @@
+{
+  "label": "The Editor",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "The PreTeXt.Plus writing environment: layout, divisions, assets, preamble, and collaborators."
+  }
+}
