@@ -38,8 +38,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/PreTeXtPlus/pretext-plus-docs/tree/main/',
           routeBasePath: '/',
         },
         blog: false,
@@ -87,11 +85,13 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/PreTeXtPlus/pretext-plus-docs',
-          label: 'GitHub',
-          position: 'right',
+          href: 'https://pretextbook.org/doc/guide/html/part-basics.html',
+          label: 'PreTeXt guide',
+          position: 'left',
+          target: '_blank',
         },
       ],
+
     },
     footer: {
       style: 'dark',
