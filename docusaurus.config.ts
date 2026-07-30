@@ -50,6 +50,22 @@ const config: Config = {
     ],
   ],
 
+  // Offline, client-side search (lunr). The index is built at compile time and
+  // shipped with the site, so no external crawler or search service is needed.
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        // Docs are served from the site root, see `routeBasePath` above.
+        docsRouteBasePath: '/',
+        indexBlog: false,
+        hashed: true,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
+
   themeConfig: {
     image: 'img/pretext-plus-social-card.svg',
     colorMode: {
