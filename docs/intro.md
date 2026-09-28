@@ -20,10 +20,12 @@ A single project can even mix all three: one section in PreTeXt, the next in LaT
 
 ## What this documentation covers
 
-These pages document what is **unique to PreTeXt.Plus**: the interface, projects and templates, collaborators, assets, build outputs and publishing, and the specifications for LaTeX-style and Markdown-style PreTeXt.
+These pages document what is **unique to PreTeXt.Plus**: the editor, projects and templates, collaborators, assets and snippets, build outputs, build settings, and publishing, and the specifications for LaTeX-style and Markdown-style PreTeXt.
 
 They do **not** teach the PreTeXt language itself. For that, use the official [PreTeXt Author's Guide](https://pretextbook.org/doc/guide/html/).
 
 ## Getting help
 
-Found a bug, or want a feature? Use the **Give feedback** link in the editor, or email [feedback@pretext.plus](mailto:feedback@pretext.plus).
+Found a bug, or want a feature? In the editor, use **Help & Feedback ▸ Support / Feedback**. Elsewhere on the site, **Help ▸ Email Support** writes to [support@pretext.plus](mailto:support@pretext.plus), and you can always email [feedback@pretext.plus](mailto:feedback@pretext.plus).
+
+News about new features is posted under **Announcements** on the site.

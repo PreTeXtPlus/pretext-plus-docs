@@ -1,23 +1,35 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Publishing and Sharing
 
-There are four different things you might mean by "sharing" a project, and PreTeXt.Plus keeps them separate:
+There are several different things you might mean by "sharing" a project, and PreTeXt.Plus keeps them separate:
 
 | I want to… | Use |
 |---|---|
 | Give readers a link to the finished document | [Publish an output](#publishing-an-output) |
 | Let a co-author edit with me | [Collaborators](/editor/collaborators/) |
 | List my work on a public profile | [Project visibility](#project-visibility) |
+| Let colleagues see my source and adapt it | [Share source](#share-source) |
 | Move the project to a local PreTeXt install | [Download source](#download-source) |
+
+## Private previews
+
+Once an output has been built, **Preview (private)** — or **Open (private)** for a PDF or slide deck — on its row shows you the result. Only you and your collaborators can open it; it is not a link to hand out.
 
 ## Publishing an output
 
-Publishing exposes an [output](/building/outputs/) at a public URL. Open the output's **⋯** drawer and click **Publish this output**, or use **Publish** directly on the row.
+Publishing exposes an [output](/building/outputs/) at a public URL. Use **Publish** on the output's row, or **Publish this output** in its **⋯** drawer.
 
-Publishing **does not start a build** — it exposes the build that already succeeded. An output with no successful build cannot be published; the drawer says so.
+Publishing **does not start a build** — it exposes the build that already succeeded. An output with no successful build cannot be published.
+
+Two things ask for confirmation first:
+
+- publishing an output of a **Private** project makes the project **Unlisted** — see [Project visibility](#project-visibility);
+- publishing output from a build that [reported errors](/building/outputs/#builds-that-report-errors).
+
+Once published, the row shows a **Public link ↗** and a **View** button, and the drawer shows the full URL with a **Copy** button.
 
 ### The public link
 
@@ -26,8 +38,6 @@ Published output is served from a separate host:
 ```
 https://pub.pretext.plus/o/<project-id>/<output-slug>/index.html
 ```
-
-The drawer shows the full URL with a **Copy** button.
 
 A few things worth knowing:
 
@@ -41,46 +51,43 @@ A few things worth knowing:
 
 Two options:
 
-- Link to (or iframe) the published website using PreTeXt's standard embed code.
+- Link to, or embed, pages of the published website. Websites include an **embed button** in their toolbar by default, which gives readers the code to embed a page; turn it off in [Build settings](/building/build-settings/).
 - Build a **SCORM package** output and upload the resulting zip to your LMS.
 
 ## Project visibility
 
-Separately from any output, each project has a visibility setting on its dashboard:
+Each project has a visibility setting, chosen at the top of its project page. Only the owner can change it.
 
 | Visibility | Effect |
 |---|---|
-| **Private** (default) | Not listed anywhere |
-| **Unlisted** | Not listed, but links you hand out still work |
-| **Public** | Listed on your public profile page |
+| **Private** (default) | Nothing about the project is public. Switching a project to Private unpublishes all of its outputs. |
+| **Unlisted** | Not listed on your profile, but its published outputs and its [Share source](#share-source) link work for anyone who has them. |
+| **Public** | Listed on your [public profile](/getting-started/accounts-and-limits/#your-public-profile), with its description, links to its published outputs, and its source. |
 
-If you have set a username in your account settings, your profile lives at `pretext.plus/@yourname` and lists your Public projects with links to their published outputs.
+Publishing an output of a Private project makes it Unlisted, since a published output is, by definition, something the public can reach.
 
-:::warning[Visibility is about listing, not access]
-Setting a project to Public does not publish anything, and does not expose your source. What readers can reach is decided entirely by which outputs you have published.
-:::
+## Share source
+
+Any project that is not Private has a **Share source** page, reached from the button on the project page. It shows the project's source in a read-only copy of the editor — Table of Contents, live preview, and all.
+
+Anyone with the link can read it. A signed-in visitor can **copy this project** into their own account and edit the copy; see [Copying a project](/getting-started/managing-projects/#copying-a-project). This is how a colleague adapts your materials without needing edit access to your project.
 
 ## Download source
 
-**Download source** on the dashboard gives you a zip laid out as a standard PreTeXt-CLI project:
+**Download source** on the project page gives you a zip laid out as a standard PreTeXt-CLI project:
 
 ```
 project.ptx                  # manifest, with one <target> per output
-publication/publication.ptx  # publication file
+publication/publication.ptx  # the project's build settings
+publication/<slug>.ptx       # one per output, with its own settings applied
 source/main.ptx              # your document, fully assembled
 source/external/…            # every asset file
 ```
 
-`source/main.ptx` is the complete document: every division converted from its authoring format and every include expanded, in order. Unzip it and `pretext build` works straight away, using the same target names as your outputs.
+`source/main.ptx` is the complete document: every division converted from its authoring format and every include expanded, in order. Unzip it and `pretext build <slug>` works straight away, using the same output names and settings as your project.
 
 This is your exit route. Nothing about PreTeXt.Plus locks your work in.
 
-## Share source
+## Legacy quick-preview links
 
-Subscribers can hand out a **Share source** link, which shows the project's PreTeXt source to a reader and lets them make their own copy of the project. This is how a colleague adapts your materials without needing edit access to your project.
-
-The link is available from the dashboard when the project owner has a subscription.
-
-## Quick preview
-
-**Quick preview** on the dashboard renders the current source without going through the build pipeline. It is a fast look at your work in progress, not a durable link — use a published output for anything you hand out.
+Before build outputs existed, some projects got a quick-preview link. Where a project still has one, the project page says so. These links stop working after **November 1, 2026** — build and publish a website output to replace yours.

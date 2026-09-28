@@ -14,17 +14,17 @@ The sample project is a small article made of three sections, each written in a 
 | `tryit-xml` | Classic PreTeXt XML |
 | `tryit-markdown` | Markdown-style PreTeXt |
 
-Use the **Contents** panel on the left to move between them, edit anything you like, and use the preview to see the rendered result. This is a genuine demonstration of [mixing markup styles](/editor/divisions/#mixing-markup-styles) in one document.
+Use the **Table of Contents** on the left to move between them, edit anything you like, and watch the live preview update. This is a genuine demonstration of [mixing markup styles](/editor/divisions/#mixing-markup-styles) in one document.
 
 :::warning[Nothing is saved]
-Changes made in the try-it project are discarded when you leave the page. When you are ready to keep your work, [create a free account](/getting-started/accounts-and-limits/) and [start a project](/getting-started/creating-a-project/).
+Changes made in the try-it project are discarded when you leave the page. When you are ready to keep your work, use **Account ▸ Create account** in the top-right corner, then [start a project](/getting-started/creating-a-project/).
 :::
 
 ## What is not available in try-it
 
 - Saving, of course.
-- [Assets](/editor/assets/) — you cannot upload images into the scratch project.
+- [Assets](/editor/assets/) and [snippets](/editor/snippets/).
 - [Build outputs](/building/outputs/) and [publishing](/building/publishing/).
 - [Collaborators](/editor/collaborators/).
 
-Everything else — the code editor, completions, the table of contents, the live preview — works exactly as it does in a real project.
+Everything else — the code editor and its [writing tools](/editor/writing-tools/), the Table of Contents, find and replace, the [live preview](/editor/preview/) — works exactly as it does in a real project.

@@ -12,12 +12,14 @@ Every PreTeXt.Plus project is, in the end, a PreTeXt document. What is unique to
 | [LaTeX-style](/writing/latex-style/) | LaTeX-like syntax | Authors coming from LaTeX; pasting in existing `.tex` |
 | [Markdown-style](/writing/markdown-style/) | Extended Markdown | Fast drafting; lightweight documents; authors from Quarto/R Markdown |
 
+Any of them can also be used to write a [slideshow](/writing/slideshows/).
+
 ## How the conversion works
 
 LaTeX-style and Markdown-style source is **converted to PreTeXt XML**, never rendered directly. That conversion happens in your browser, continuously:
 
 - the **preview** shows the converted result;
-- the **full source** view (source menu → **Display Full Source**) shows the assembled PreTeXt for the whole project, with every division converted and every include expanded;
+- **File ▸ Display Full Source** shows the assembled PreTeXt for the whole project, with every division converted and every include expanded;
 - the **build** runs the official PreTeXt toolchain on that same converted XML.
 
 So the accessibility guarantees, the multi-format output, and the semantics are PreTeXt's in all three cases. The markup style only changes what you type.
@@ -37,24 +39,24 @@ Divisions carry their own format. A book can have PreTeXt chapters, a LaTeX chap
 
 The mechanism is the *include placeholder*, written differently in each style:
 
-| Style | Include a child division | Include an asset |
-|---|---|---|
-| PreTeXt | `<plus:section ref="sec-intro"/>` | `<plus:image ref="fig-1"/>` |
-| LaTeX-style | `\plus{section}{sec-intro}` | `\plus{image}{fig-1}` |
-| Markdown-style | `::section{ref="sec-intro"}` | `::image{ref="fig-1"}` |
+| Style | Include a child division | Include an asset | Include a snippet |
+|---|---|---|---|
+| PreTeXt | `<plus:section ref="sec-intro"/>` | `<plus:image ref="fig-1"/>` | `<plus:snippet ref="note"/>` |
+| LaTeX-style | `\plus{section}{sec-intro}` | `\plus{image}{fig-1}` | `\plus{snippet}{note}` |
+| Markdown-style | `::section{ref="sec-intro"}` | `::image{ref="fig-1"}` | `::snippet{ref="note"}` |
 
-All three convert to the same `<plus:… ref="…"/>` element, which is expanded at assembly time. See [Divisions and modular editing](/editor/divisions/).
+All three convert to the same `<plus:… ref="…"/>` element, which is expanded at assembly time. See [Divisions and modular editing](/editor/divisions/), [Assets](/editor/assets/), and [Snippets](/editor/snippets/).
 
 :::note[One-way conversion]
-You can convert a LaTeX-style or Markdown-style project to classic PreTeXt (this creates a copy). You cannot convert PreTeXt back into LaTeX-style or Markdown-style.
+You can convert a LaTeX-style or Markdown-style division to PreTeXt, keeping the original as an unplaced division. You cannot convert PreTeXt back into LaTeX-style or Markdown-style. See [Converting a division to PreTeXt](/editor/divisions/#converting-a-division-to-pretext).
 :::
 
 ## Editor support
 
-Whichever style you use, the code editor provides completions and live diagnostics for it:
+Whichever style you use, the code editor provides completions, live diagnostics, and spell checking for it:
 
-- **PreTeXt** — schema-driven element and attribute completion.
-- **LaTeX-style** — environment and macro completion, `\begin`/`\end` matching, math-mode awareness, `\label`/`\ref` intelligence.
+- **PreTeXt** — schema-driven element and attribute completion, and validation against the PreTeXt schema.
+- **LaTeX-style** — environment and macro completion, `\begin`/`\end` matching, math-mode awareness, `\label`/`\ref` intelligence, and help cleaning up legacy LaTeX.
 - **Markdown-style** — directive completion, fence matching, math-mode awareness.
 
-Diagnostics are advisory: an unknown macro is flagged as information, an unknown environment or directive as a warning, an unmatched `\begin` or fence as an error.
+See [Writing tools](/editor/writing-tools/) for the details.
