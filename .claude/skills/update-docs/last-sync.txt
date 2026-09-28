@@ -1,0 +1,9 @@
+pretext-plus: 5add168a (origin/main, "Merge pull request #430 from PreTeXtPlus/icons", 2026-09-28)
+verified: 2026-09-28
+converters (from pretext-plus package-lock.json):
+  @pretextbook/latex-pretext 0.3.1 (+ @pretextbook/unified-latex-to-pretext 0.0.13)
+  @pretextbook/remark-pretext 0.2.0
+  @pretextbook/latex-style-pretext 0.5.1
+  @pretextbook/markdown-style-pretext 0.1.4
+  @pretextbook/import 0.14.1
+  @pretextbook/pretext-html 0.16.0
