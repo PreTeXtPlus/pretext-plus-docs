@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Markdown-Style PreTeXt
 
-Markdown-style PreTeXt is CommonMark (plus GitHub-flavored extensions) with two additions: **YAML frontmatter** that declares what the division is, and **directives** that carry the PreTeXt-specific structure Markdown has no syntax for.
+Markdown-style PreTeXt is CommonMark with two additions: **YAML frontmatter** that declares what the division is, and **directives** that carry the PreTeXt-specific structure Markdown has no syntax for.
 
 Everything converts to PreTeXt XML before preview or build.
 
@@ -30,9 +30,9 @@ The body starts here.
 | `label` | The PreTeXt `label` attribute. |
 | `component` | The PreTeXt `component` attribute. |
 
-When `division` names a **document root**, the whole file is wrapped in that element and `#` headings become its outermost child division — `#` under `book` is a chapter, under `article` a section, under `slideshow` a section (with `##` for individual slides).
+When `division` names a **document root**, the whole file is wrapped in that element and `#` headings become its outermost child division — `#` under `book` is a chapter, under `article` a section, under `slideshow` a section (with `##` for individual slides; see [Slideshows](/writing/slideshows/)).
 
-Only these keys are read; the block is not general YAML.
+Only these keys are read; the block is not general YAML. The frontmatter is locked in the editor — change it with **Edit properties** in the Table of Contents. See [Protected regions](/editor/divisions/#protected-regions).
 
 ## Headings become divisions
 
@@ -51,7 +51,7 @@ Some introductory text.
 ## The formal definition
 ```
 
-Here `#` is a section and `##` a subsection. Once the hierarchy runs out, deeper headings become `paragraphs`.
+Here `#` is a section and `##` a subsection. Once the hierarchy runs out, deeper headings become `paragraphs`. Divisions made from headings have no `xml:id`; to cross-reference one, make it a division of its own in the Table of Contents.
 
 Content appearing **before** the first heading is wrapped in an `<introduction>` automatically — unless the heading immediately follows the title, in which case no introduction is added.
 
@@ -86,6 +86,7 @@ Math delimiters inside inline code or a fenced code block are left alone, so `` 
 | `**strong**` | `<alert>` | |
 | `` `code` `` | `<c>` | |
 | `$math$` | `<m>` | |
+| `[text](https://…)` | `<url>` | also `<https://…>` |
 
 The asterisk/underscore distinction is the one surprise for Markdown veterans: in most Markdown, `*x*` and `_x_` are the same. Here `_x_` marks a **defined term**, matching PreTeXt's `<term>`.
 
@@ -97,7 +98,6 @@ The asterisk/underscore distinction is the one surprise for Markdown veterans: i
 | `- item` / `1. item` | `<ul>` / `<ol>` with `<li>` |
 | `> quoted` | `<blockquote>` |
 | Fenced code | `<program>`, with `language` taken from the info string |
-| `<!-- ... -->` | Comment; ignored |
 
 ````markdown
 ```python
@@ -124,7 +124,7 @@ See any geometry text.
 
 - `[...]` after the name is the **title**.
 - `{#id}` sets `xml:id`. Other `{key=value}` pairs pass through as attributes.
-- Nesting is by colon count: an inner directive uses *more* colons than its parent. Mixed counts are normalized for you, so mismatched-but-unambiguous nesting still parses.
+- Nesting is by colon count: an inner directive uses *more* colons than its parent. Close each directive with the same number of colons that opened it — the editor flags a mismatch.
 - Directive names are case-insensitive.
 
 ### Supported container directives
@@ -193,9 +193,10 @@ Leaf directives (`::` — two colons) are the include syntax:
 ::section{ref="sec-limits"}
 ::chapter{ref="ch-intro"}
 ::image{ref="fig-tangent" width="50%"}
+::snippet{ref="worksheet-instructions"}
 ```
 
-Each becomes `<plus:KIND ref="..."/>`, with attributes passed through verbatim. Attributes are space-separated, in the usual directive style — not comma-separated.
+Each becomes `<plus:KIND ref="..."/>`, with attributes passed through verbatim and copied onto whatever the placeholder brings in — `::section{ref="sec-answers" component="instructor"}` marks the section for [versions](/building/build-settings/#versions-student-and-instructor-editions). Attributes are space-separated, in the usual directive style — not comma-separated.
 
 Any name works, so `::doenet{ref="activity-3"}` is valid too; the converter does not check the kind against a list.
 
@@ -207,8 +208,10 @@ The inline directive form `:name[content]` is parsed but has no conversion yet �
 
 ## What is not supported
 
-- Markdown tables, images (`![](...)`), and links currently convert to `<TODO>` placeholders rather than PreTeXt elements. Use an [asset include](#includes-and-assets) for images; for now, write tables in a PreTeXt division.
-- Raw HTML.
-- Text directives, as above.
+- **Tables and strikethrough.** These are GitHub extensions, not CommonMark, so a table or `~~text~~` comes through as ordinary text. For now, write tables in a PreTeXt division, or in a PreTeXt [snippet](/editor/snippets/).
+- **Images** written as `![alt](src)` become `<TODO>` placeholders. Use an [asset include](#includes-and-assets) instead.
+- **Raw HTML**, including `<!-- comments -->`, becomes a `<TODO>` placeholder.
+- **Horizontal rules** (`---` in the body) and **hard line breaks** (a line ending in two spaces) become `<TODO>` placeholders.
+- **Text directives**, as above.
 
-Placeholders are visible in the full-source view and in the build, so you always know where they are. If you need a construct that is missing, tell us at [feedback@pretext.plus](mailto:feedback@pretext.plus).
+Placeholders are visible in the full-source view and in the build, so you always know where they are. If you need a construct that is missing, tell us with **Help & Feedback ▸ Support / Feedback** or at [feedback@pretext.plus](mailto:feedback@pretext.plus).

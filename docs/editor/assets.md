@@ -1,33 +1,31 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # Assets and Images
 
-An **asset** is a piece of content the project owns but that does not live in a division's prose — today, images. Assets are managed separately from your text and placed with a reference, so the same image can appear in several places, at different widths, without duplicating anything.
+An **asset** is a piece of content the project owns but that does not live in a division's prose — today, images: uploaded pictures, and diagrams you author in TikZ, Asymptote, and the like. Assets are managed separately from your text and placed with a reference, so the same image can appear in several places, at different widths, without duplicating anything.
 
-This works differently from a local PreTeXt install, where an image is a file path in a repository. On PreTeXt.Plus you upload the file once, PreTeXt.Plus gives it a **reference**, and you place that reference.
+This works differently from a local PreTeXt install, where an image is a file path in a repository. On PreTeXt.Plus you add the image once, PreTeXt.Plus gives it a **reference**, and you place that reference.
 
 ## Where assets live
 
-At the bottom of the **Contents** panel is an **Assets** section, folded by default. It lists every asset with a thumbnail and its reference, grouped by kind, and has two buttons:
+Open the **Assets** panel from the project explorer. It lists every asset with a thumbnail and its reference, and has two buttons at the bottom:
 
-- **Manage** — open the asset manager on the *In Document* view.
-- **Add** — open the asset manager on the *Add Asset* view.
+- **Manage** — open the asset manager on its list of assets.
+- **Add** — open the asset manager ready to add one.
 
-In a PreTeXt division you can also reach it from the source menu's **Assets** action.
+In a PreTeXt division you can also reach the asset manager from **File ▸ Assets…**. The project page shows a read-only gallery of the same assets.
 
 ## Adding an image
 
-1. Click **Add**.
-2. Choose **Image** as the kind.
-3. Either:
-   - **Upload** — drag and drop a file, paste an image from the clipboard, or click to browse. A pasted image is named automatically.
-   - **External URL** — switch to that tab and give the image's URL. PreTeXt.Plus fetches it and stores a copy, so the image will not break if the original disappears.
-4. Optionally give it a **title** — this is what the Contents list shows.
-5. Click **Add to Project**.
+Click **Add**, then choose a source:
 
-The asset is stored and assigned a **reference**: a short identifier, unique within the project, that you use to place it.
+- **Upload** — paste an image from the clipboard, drag and drop a file, or click to browse. PNG, JPEG, GIF, SVG, and WebP are supported.
+- **External URL** — give the image's URL. PreTeXt.Plus fetches it and stores a copy, so the image will not break if the original disappears.
+- **Custom** — an image generated from source; see [Authored diagrams](#authored-diagrams).
+
+Optionally give it a **title** — this is what the asset lists show — and click **Add to Project**. The asset is stored and assigned a **reference**, derived from the title: a short identifier, unique within the project, that you use to place it.
 
 ## Placing an image
 
@@ -39,7 +37,7 @@ Put the placeholder wherever you want the image, using the syntax for the divisi
 | LaTeX-style | `\plus{image}{fig-tangent}` |
 | Markdown-style | `::image{ref="fig-tangent"}` |
 
-Rather than typing it, use **Copy embed code** in the asset manager — it gives you the right form for the division you are in.
+Rather than typing it, use **Copy embed code** — in the asset's menu or the asset manager — which gives you the right form for the division you are in.
 
 ### Width
 
@@ -51,7 +49,7 @@ Width is a property of the *placement*, not of the asset, so the same image can 
 | LaTeX-style | `\plus[width=50]{image}{fig-tangent}` |
 | Markdown-style | `::image{ref="fig-tangent" width="50%"}` |
 
-In LaTeX-style a bare number on `width` is read as a percentage, because a literal `%` would start a comment.
+In LaTeX-style a bare number on `width` is read as a percentage, because a literal `%` would start a comment. Any other attribute you add to the placeholder is copied onto the image too.
 
 :::note[Markdown attributes are space-separated]
 `::image{ref="fig-1" width="50%"}` — no commas between attributes.
@@ -59,47 +57,47 @@ In LaTeX-style a bare number on `width` is read as a percentage, because a liter
 
 ### What it becomes
 
-At build time the placeholder is replaced by a real PreTeXt `<image>` element, with a `source` attribute naming the file (`fig-tangent.png`), the width if you gave one, and any description you authored on the asset. The internal storage key is never written into your document, so downloaded source stays portable.
+At build time the placeholder is replaced by a real PreTeXt `<image>` element: a `source` attribute naming the file (`fig-tangent.png`), the placement's attributes such as `width`, the asset's short description, and any additional source you authored on it. Downloaded source therefore stays portable.
 
-## Managing existing assets
+## Managing an asset
 
-The asset manager's **In Document** view joins what the project holds against what the document references, so both kinds of mismatch are visible:
+Choose **Manage asset** from an asset's **⋮** menu, or click it in the asset manager, to open its details:
+
+- **Replace image…** — swap the underlying file, keeping the reference, so every placement updates at once.
+- **Title** and **Id** — the Id is the reference. Changing it updates every placeholder already in your document.
+- **Short description (Alt text)** — a brief, plain-text description of the image for readers who cannot see it, inserted as PreTeXt's `<shortdescription>`. The editor flags any image without one, since a short description is required for accessibility.
+- **Advanced ▸ Additional source** — extra PreTeXt placed inside the generated `<image>`, such as a longer `<description>`.
+- **Duplicate** — copy the asset under a new reference, for a variant that should be placed independently.
+
+**Save and copy embed code** saves your changes and copies the placeholder, ready to paste.
+
+## Keeping document and assets in step
+
+The asset lists join what the project holds against what the document references, so both kinds of mismatch are visible:
 
 | Status | Meaning | Fix |
 |---|---|---|
-| **Needs asset** | The document references a reference that no asset uses | **Link / create** — attach an upload to it — or **Remove from document** |
-| **Not placed** | The asset exists but no placeholder points at it | Add a placeholder, or remove the asset |
+| **Needs asset** | The document uses a reference that no asset has | **Link / create** — attach an asset to it — or **Remove from document** |
+| **Not placed** | The asset exists but no placeholder points at it | Place it, or remove the asset |
 
-Per-asset actions:
+**Remove from project** deletes the asset *and* strips its placeholders from the document; you are asked to confirm when it is actually placed.
 
-- **Edit** — change the title or authored description.
-- **Replace asset** — swap the underlying file, keeping the reference, so every placement updates at once.
-- **Duplicate** — copy the asset under a new reference. Useful for a variant that should be placed independently.
-- **Copy embed code** — the placeholder for the current division's format.
-- **Remove from project** — deletes the asset *and* strips its placeholders from the document. You are asked to confirm when it is actually placed.
-- **Remove from document** — for an unlinked reference, deletes just the placeholder.
+## Authored diagrams
 
-## Storage
-
-Uploads count against your account's storage quota: **20 MB** on a free account, **100 MB** with a subscription. See [Accounts and limits](/getting-started/accounts-and-limits/).
-
-Supported image types include PNG, JPEG, GIF, SVG, WebP, BMP, and TIFF. SVGs are displayed inline in the editor.
-
-## Generated diagrams
-
-Diagrams generated from source — PreFigure, TikZ (`latex-image`), Asymptote, Sage plots — are written directly in a **PreTeXt** division, using the normal PreTeXt elements:
+A **Custom** asset is an image generated from source by the PreTeXt toolchain — TikZ, Asymptote, a Sage plot, and so on. Give it a title and click **Create**; then write its PreTeXt in the **PreTeXt source** field of its details, for example:
 
 ```xml
-<image xml:id="fig-plot">
-    <shortdescription>A parabola</shortdescription>
-    <latex-image>
-        \begin{tikzpicture}
-            \draw[domain=-2:2] plot (\x, {\x*\x});
-        \end{tikzpicture}
-    </latex-image>
-</image>
+<latex-image>
+    \begin{tikzpicture}
+        \draw[domain=-2:2] plot (\x, {\x*\x});
+    \end{tikzpicture}
+</latex-image>
 ```
 
-These are rendered by the PreTeXt toolchain when you [build](/building/outputs/) — the in-browser live preview cannot generate them, so build a website output to see the result. TikZ preambles go in the **Image Macros** section of your [preamble](/editor/preamble/).
+It is placed like any other image, from any markup style, and gets the same short description. You can also write such an image directly in a PreTeXt division, wrapped in the usual `<image>` element.
 
-The asset manager does not yet cover generated diagrams; managing them through the same picker is on the [roadmap](/features/roadmap/).
+These are rendered by the PreTeXt toolchain when you [build](/building/outputs/) — the live preview cannot generate them, so build a website output to see the result. TikZ libraries and styles go in the **Image Macros** section of your [preamble](/editor/preamble/).
+
+## Limits
+
+A free account can hold **100 assets** across all its projects; a subscription removes the limit. See [Accounts and limits](/getting-started/accounts-and-limits/).

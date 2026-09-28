@@ -13,28 +13,30 @@ This reflects current plans and is subject to change.
 ## In progress
 
 - **Wider LaTeX-style and Markdown-style coverage.** Both conversions handle a substantial subset today; we are steadily filling in the gaps. Tell us which constructs matter most to you.
-- **Markdown tables, links, and inline images**, which currently convert to `<TODO>` placeholders.
-- **Generated diagrams in the asset manager** — authoring PreFigure, TikZ, and Asymptote images through the same picker as uploads, from any markup style.
+- **Markdown tables and inline images**, which currently come through as plain text and `<TODO>` placeholders respectively.
 - **More document types** beyond article, book, and slideshow — course packets and similar.
 
 ## Planned
 
-- **Publication file options** — numbering depth, HTML chunking, and the rest of PreTeXt's per-output settings, editable from the interface. See [Preamble](/editor/preamble/).
 - **Shorter, readable public URLs** for published output, replacing the project identifier in `/o/…` links. Existing links will keep working.
 - **Commenting** on divisions, alongside the existing real-time [collaborative editing](/editor/collaborators/).
-- **Richer visual editing**, including for LaTeX-style and Markdown-style divisions.
+- **Visual (WYSIWYG) editing** alongside the code editor.
 - **Interactive activity assets** (Doenet and others) in the asset manager.
 
 ## Recently shipped
 
-- Real-time collaborative editing with presence and remote cursors
-- Uploaded image assets, with a shared reference syntax across all three markup styles
-- The full set of build outputs — PDF, EPUB, Kindle, braille, SCORM, slides, and LaTeX source
-- Publishing to stable public URLs, with build history and one-step rollback
-- Importing existing LaTeX, Markdown, and PreTeXt documents
-- Starting a project from a template
-- In-browser live preview with two-way source sync
+- [Build settings](/building/build-settings/) — themes, numbering, journal styles, and more — for your account, a project, or a single output
+- [Versions](/building/build-settings/#versions-student-and-instructor-editions) for student and instructor editions
+- [Slideshows](/writing/slideshows/) in every markup style, with Deck and Present views in the preview
+- Importing Word and other formats through Pandoc, and importing into an existing division
+- [Spell checking](/editor/writing-tools/#spell-check), project-wide [find and replace](/editor/writing-tools/#find-and-replace), and [snippets](/editor/snippets/)
+- Alt text and [authored diagrams](/editor/assets/#authored-diagrams) in the asset manager
+- A [live preview](/editor/preview/) that updates as you type
+- Queued builds, one-click bulk builds, and reviewing builds that report errors
+- Project descriptions, copying projects, and transferring ownership to a collaborator
+
+And earlier: real-time collaborative editing, image assets, the full set of build outputs, publishing with one-step rollback, importing, templates, and the in-browser preview.
 
 ## Other ideas?
 
-We want to make PreTeXt.Plus as useful as possible for the community. If you have ideas for features or improvements, share them: [feedback@pretext.plus](mailto:feedback@pretext.plus), or use the **Give feedback** link in the editor.
+We want to make PreTeXt.Plus as useful as possible for the community. If you have ideas for features or improvements, share them: [feedback@pretext.plus](mailto:feedback@pretext.plus), or **Help & Feedback ▸ Support / Feedback** in the editor.

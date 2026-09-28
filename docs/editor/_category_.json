@@ -3,6 +3,6 @@
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "The PreTeXt.Plus writing environment: layout, divisions, assets, preamble, and collaborators."
+    "description": "The PreTeXt.Plus writing environment: layout and menus, divisions, writing tools, the live preview, assets, snippets, the preamble, and collaborators."
   }
 }
