@@ -20,7 +20,7 @@ Everything that happens outside the editor lives on the project's page:
 |---|---|
 | **Visibility on your public profile** | Private, Unlisted, or Public. See [Project visibility](/building/publishing/#project-visibility). |
 | **Description** | A short summary, also shown on your public profile. Change it with **Edit description**. |
-| **Write** | Opens the [editor](/editor/overview/). |
+| **Write** | Opens the [editor](/editor/overview/). **Manage project** in the editor's top bar brings you back here. |
 | **Make copy** | Duplicates the project into your account. See below. |
 | **Download source** | A zip that PreTeXt-CLI can build as is. See [Download source](/building/publishing/#download-source). |
 | **Share source** | A read-only view of the source that others can copy. Not offered while the project is Private. |

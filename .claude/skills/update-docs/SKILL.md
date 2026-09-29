@@ -56,7 +56,7 @@ Grep the views and components for the exact UI strings the docs quote. Use the l
 
 ## 3. Probe the converters
 
-The Writing pages are detailed specifications, so check them by running the converters rather than reading tables:
+The Writing pages are detailed specifications, so check them by running the converters rather than reading tables. Skip this step when no `@pretextbook/*` version changed in step 1 and you are not editing the Writing pages.
 
 1. In `../pretext-tools`, confirm the working tree matches the pinned versions — e.g. `git diff --stat "@pretextbook/latex-pretext@<ver>" HEAD -- packages/latex-pretext/src` prints nothing — and that `node_modules` has the pinned transitive versions (notably `@pretextbook/unified-latex-to-pretext`).
 2. Run `node scripts/probe-latex.mjs` and `node scripts/probe-markdown.mjs` (in this skill's folder). They run the TypeScript sources directly through `jiti`; set `PRETEXT_TOOLS` if pretext-tools is not a sibling of this repo. Add samples for any new claim.
@@ -89,7 +89,7 @@ Style:
 ## 5. Check and finish
 
 - `npm run build` must pass — `onBrokenLinks` is `throw`, and broken anchors print warnings.
-- Grep `docs/` for terms from UI that no longer exists, and add new ones here. So far: `Contents panel|source menu|Give feedback|visual editor|Quick preview|zip download|brandlogo|Import LaTeX|20 MB` (the roadmap's "Visual (WYSIWYG) editing" item is intentional).
+- Grep `docs/` for terms from UI that no longer exists, and add new ones here. So far: `Contents panel|source menu|Give feedback|visual editor|Quick preview|zip download|brandlogo|Import LaTeX|20 MB|Save and manage project` (the roadmap's "Visual (WYSIWYG) editing" item is intentional).
 - Update `last-sync.txt`: the new `origin/main` commit, the date, and the converter versions.
 - Report to the user: pages changed or added; claims that were already wrong at the baseline; app and converter bugs found; roadmap edits needing confirmation.
 
