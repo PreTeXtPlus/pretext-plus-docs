@@ -1,4 +1,4 @@
-pretext-plus: 5add168a (origin/main, "Merge pull request #430 from PreTeXtPlus/icons", 2026-09-28)
+pretext-plus: a0f91a01 (origin/main, "Bring back a way to the project page; show save status; save before leaving the editor (#432)", 2026-09-28)
 verified: 2026-09-28
 converters (from pretext-plus package-lock.json):
   @pretextbook/latex-pretext 0.3.1 (+ @pretextbook/unified-latex-to-pretext 0.0.13)

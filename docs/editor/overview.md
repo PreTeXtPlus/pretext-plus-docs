@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # The Editor
 
-Open a project's editor with **Write** — on the project's card in your Projects Dashboard, or on the project page.
+Open a project's editor with **Write** — on the project's card in your Projects Dashboard, or on the project page. **Manage project**, at the right of the editor's top bar, takes you back to the project page.
 
 ## Layout
 
-**Top bar.** The PreTeXt.Plus logo (back to your projects), the project **title** — click it to rename the project — and the menus: **File**, **Edit**, **Insert**, **Tools**, **Language**, and **Help & Feedback**. Your **Account** menu sits at the far right.
+**Top bar.** The PreTeXt.Plus logo (back to your projects); the project **title** — click it to rename the project — with a [save-status icon](#saving) beside it; and the menus: **File**, **Edit**, **Insert**, **Tools**, **Language**, and **Help & Feedback**. At the right are the **Manage project** button and your **Account** menu. In a narrow window the top bar folds onto two rows: **Manage project** shows just its icon, and the Account menu moves into **File**.
 
 **Project explorer.** A rail of icons down the left edge, each opening a panel beside it:
 
@@ -42,7 +42,7 @@ Document-level actions. Some apply to only one format:
 | **Assets…** — open the asset manager | ✓ | | |
 | **Snippets…** — open the snippet manager | ✓ | | |
 | **Display Full Source** — the assembled PreTeXt for the whole project | ✓ | ✓ | ✓ |
-| **Save and manage project** — save, then go to the project page | ✓ | ✓ | ✓ |
+| **Manage Project** — save, then go to the project page | ✓ | ✓ | ✓ |
 
 In LaTeX and Markdown divisions, open assets and snippets from their panels in the project explorer.
 
@@ -70,11 +70,25 @@ Links to this documentation, the PreTeXt Guide, and the PreTeXt sample article, 
 
 ## Saving
 
-On a project without collaborators, the editor **autosaves every 10 seconds** while there are unsaved changes. `Ctrl`/`Cmd`+`S` saves immediately, and **File ▸ Save and manage project** saves and takes you to the project page.
+On a project without collaborators, the editor **autosaves every 10 seconds** while there are unsaved changes. `Ctrl`/`Cmd`+`S` saves immediately, and **Manage project** — or **File ▸ Manage Project** — saves and takes you to the project page.
 
 Some actions persist immediately rather than waiting for the next autosave — adding or deleting a division, and adding, replacing, or removing an asset.
 
 On a project with [collaborators](/editor/collaborators/), every change is saved as it is typed.
+
+The cloud icon beside the title shows where things stand; hover over it for details:
+
+| Status | Meaning |
+|---|---|
+| **Saved** | Everything is saved. |
+| **Saving…** | A save is on its way. |
+| **Unsaved changes** | You have edits that have not been saved yet. Click the icon to save now. |
+| **Not saved** | The last save failed, so your latest changes exist only in this tab. Click the icon to try again. |
+| **Reconnecting** | The connection dropped. Your changes will save when it returns — keep the tab open until then. |
+
+### Leaving the editor
+
+Every way out that the editor offers — **Manage project**, the logo, the Account menu, and **Sign out** — saves first, and warns you if the save fails rather than leaving your latest changes behind. If you close the tab or reload the page while changes are unsaved, your browser asks you to confirm.
 
 ## Keyboard shortcuts
 
